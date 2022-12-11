@@ -4,7 +4,7 @@ const compiledFactory = require("./build/CampaignFactory.json");
 
 const provider = new HDWalletProvider(
     "inhale century flush swing outer link lawn corn marriage evil weekend dilemma",
-    "https://rinkeby.infura.io/v3/06c960f60e194b39b14bad60c7ef7f73"
+    "https://goerli.infura.io/v3/30f2c950b7b946b482d5f6cefa219aab"
 );
 const web3 = new Web3(provider);
 
