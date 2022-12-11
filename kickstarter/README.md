@@ -18,3 +18,5 @@ Open http://localhost:3000 in any browser.
 Navigate to etherium folder and run
 
 `node deploy.js`
+
+Add the contract key given in _Contract deployed to_ line to factory.js
