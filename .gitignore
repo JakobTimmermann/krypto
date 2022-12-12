@@ -1,0 +1,5 @@
+*swp
+kickstarter/node_modules/
+kickstarter/.next/
+*transactions*.csv
+password.txt

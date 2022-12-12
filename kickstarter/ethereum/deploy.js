@@ -1,9 +1,18 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const Web3 = require("web3");
 const compiledFactory = require("./build/CampaignFactory.json");
+const fs = require("fs");
+
+if (process.argv.length === 2) {
+    console.error("Expected password file as argument!");
+    process.exit(1);
+}
+
+const password_file = process.argv.splice(2)[0];
+const password = fs.readFileSync(password_file).toString().slice(0, -1);
 
 const provider = new HDWalletProvider(
-    "inhale century flush swing outer link lawn corn marriage evil weekend dilemma",
+    password,
     "https://goerli.infura.io/v3/30f2c950b7b946b482d5f6cefa219aab"
 );
 const web3 = new Web3(provider);
