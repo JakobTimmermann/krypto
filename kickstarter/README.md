@@ -13,6 +13,12 @@ Navigate to kickstarter homefolder and run
 
 Open http://localhost:3000 in any browser.
 
+## Run tests
+
+`npm test`
+
+The tests are located in the test/Campaign.test.js and run via the mocha library
+
 ## Redeploy contract
 
 Navigate to etherium folder and run
